@@ -35,7 +35,7 @@ public class Polizza extends Automobile {
 
     public boolean equals(Polizza p) {
         if (this == p) return true;
-        if (p == null || p.getCodicePolizza().equals(this.getCodicePolizza())) return false;
+        if (p == null || !p.getCodicePolizza().equals(this.getCodicePolizza())) return false;
         return Objects.equals(codicePolizza, p.codicePolizza);
     }
 

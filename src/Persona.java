@@ -62,7 +62,7 @@ public class Persona implements Comparable<Persona>, Serializable {
     public boolean equals(Persona p)
     {
         if (this == p) return true;
-        if (p == null || p.getCodFiscale().equals(this.getCodFiscale()))  return false;
+        if (p == null || !p.getCodFiscale().equals(this.getCodFiscale()))  return false;
         return Objects.equals(codFiscale, p.codFiscale);
     }
 

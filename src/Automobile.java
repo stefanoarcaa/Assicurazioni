@@ -50,7 +50,7 @@ public class Automobile extends Persona implements Serializable {
 
     public boolean equals(Automobile a) {
         if (this == a) return true;
-        if (a == null || a.getTarga().equals(this.getTarga())) return false;
+        if (a == null || !a.getTarga().equals(this.getTarga())) return false;
         return Objects.equals(targa, a.targa) ;
     }
 
